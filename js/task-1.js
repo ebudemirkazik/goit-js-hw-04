@@ -1,6 +1,9 @@
 function isEnoughCapacity(products, containerSize) {
-  const totalFruit = Object.values(products).reduce((acc, count) => acc + count, 0);
-  
+  const totalFruit = Object.values(products).reduce(
+    (acc, count) => acc + count,
+    0
+  );
+
   return totalFruit <= containerSize;
 }
 
